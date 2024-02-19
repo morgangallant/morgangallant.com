@@ -1,0 +1,23 @@
+{{define "content"}}
+<h3>Morgan Gallant</h3>
+<p>Welcome to my corner of the internet. I'm an engineer who cares deeply about technology and its future. My email is <a href="mailto:morgan@morgangallant.com">morgan@morgangallant.com</a>.</p>
+
+<p>Current: <a href="https://lovely.software">The Lovely Software Corp.</a></p>
+<p>Past lives:</p>
+<ul>
+    <li>Started <a href="https://operand.ai">Operand</a> in early 2021, shut down in late 2023</li>
+    <li>Wrangled GPUs @ <a href="https://www.amd.com/en.html">AMD</a></li>
+    <li>Wrote lots of code for <a href="https://getkuna.com/">video doorbells</a></li>
+    <li>Worked on <a href="https://ieeexplore.ieee.org/document/8754179">information retrieval</a> with the <a href="https://www.queensu.ca/">Queen's</a> <a href="http://bamlab.ca">BAM Lab</a></li>
+</ul>
+
+<p>Recent blog posts:</p>
+<ul>
+{{range .Inner.RecentPosts}}
+<li><a href="/blog/{{.Slug}}">{{.Title}}</a> ({{.PublishedAt.Format "Jan 02 2006"}})</li>
+{{end}}
+</ul>
+<p><a href="/blog">See all posts</a> or <a href="/feed.xml">get the RSS feed</a>.</p>
+
+<p>The source code for this website is accessible <a href="https://github.com/morgangallant/morgangallant.com">here</a>. Deployed on <a href="https://railway.app">Railway</a>.</p>
+{{end}}

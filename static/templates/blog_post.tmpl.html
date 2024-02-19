@@ -1,0 +1,8 @@
+{{define "content"}}
+<p><a href="/blog">&larr; See all blog posts</a></p>
+<article>
+    <h3>{{.Inner.Title}}</h3>
+    <p>Published: {{.Inner.PublishedAt.Format "Jan 02 2006"}}</p>
+    {{ .Inner.Content }}
+</article>
+{{end}}
