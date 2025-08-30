@@ -1,0 +1,19 @@
+body {
+    max-width: 36rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    line-height: 1.5;
+}
+
+.note {
+    font-style: italic;
+    font-weight: normal;
+}
+
+li>p {
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+}
